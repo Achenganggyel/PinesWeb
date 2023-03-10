@@ -1,0 +1,11 @@
+CREATE TABLE pines(  
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
+    zone CHAR(2),
+    type VARCHAR(255),
+    supervisor VARCHAR(255),
+    birth_time DATETIME COMMENT 'Create Time',
+    status VARCHAR(255),
+    latitude DECIMAL,
+    longitude DECIMAL,
+    img BLOB,
+) COMMENT '';

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/api/manage.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1678467903527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1678467912947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,14 @@\n export const SearchDefault = () => {\r\n \r\n }\r\n \r\n-\r\n+/**\r\n+ * 表格页面所用api\r\n+ * 作者：Alla\r\n+ * \r\n+ */\r\n+export const \r\n // query.pageIndex = val\r\n // //从该页的data中获取\r\n // axios.get('',{\r\n //   params: {\r\n"
+                },
+                {
+                    "date": 1678467921274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n  * 表格页面所用api\r\n  * 作者：Alla\r\n  * \r\n  */\r\n-export const \r\n+export const Search\r\n // query.pageIndex = val\r\n // //从该页的data中获取\r\n // axios.get('',{\r\n //   params: {\r\n"
+                },
+                {
+                    "date": 1678467928363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,11 @@\n  * 表格页面所用api\r\n  * 作者：Alla\r\n  * \r\n  */\r\n-export const Search\r\n+export const SearchPage = () => {\r\n+    \r\n+}\r\n // query.pageIndex = val\r\n // //从该页的data中获取\r\n // axios.get('',{\r\n //   params: {\r\n"
+                }
+            ],
+            "date": 1678467903527,
+            "name": "Commit-0",
+            "content": "/**\r\n * 表格页面所用api\r\n * 作者：Alla\r\n * \r\n */\r\nexport const SearchDefault = () => {\r\n\r\n}\r\n\r\n\r\n// query.pageIndex = val\r\n// //从该页的data中获取\r\n// axios.get('',{\r\n//   params: {\r\n\r\n//   }\r\n// }).then((res) => {\r\n//   console.log('分页内容请求成功，结果为：',res)\r\n// }).catch((err) => {\r\n//   console.log('分页内容请求失败：',err.response)\r\n// })\r\n\r\n// const handleSearch = () => {\r\n//     //如果搜索框没有内容\r\n//     if(!query.content){\r\n//       dialogVisible = ref(true)\r\n//       return \r\n//     }\r\n//     let myURL = config.mysqlAddress\r\n//     axios.get('',{\r\n//       params:{\r\n  \r\n//       }\r\n//     }).then((res) => { //请求成功的回调\r\n//       console.log('查询内容请求成功，结果为：',res)\r\n//     }).catch((err) => { //失败\r\n//       console.log('查询内容请求失败：',err.response)\r\n//     })"
+        }
+    ]
+}

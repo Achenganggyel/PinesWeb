@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/stageInAll.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1678465830102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1678465830102,
+            "name": "Commit-0",
+            "content": "<template>\r\n    <div class=\"chartAll\">\r\n        <Schart class=\"schart\" canvasId=\"stageInAll\" :options=\"pinesAll_opt\"></Schart>\r\n    </div>\r\n</template>\r\n\r\n<script setup lang=\"ts\">\r\nimport Schart from 'vue-schart'\r\nimport stage_distribute from '../assets/data/pines/dataAnalysis/stage_distribute.json'\r\nlet stage_name:string[]=[]\r\nlet stage_number:number[]=[]\r\nfor(let i of stage_distribute.type){\r\n\tstage_name.push(i.title)\r\n\tstage_number.push(i.number)\r\n}\r\n\r\nconst pinesAll_opt = {\r\n    type: 'pie',\r\n\ttitle: {\r\n\t\ttext: '所有区域'\r\n\t},\r\n\tlegend: {\r\n\t\tposition: 'left'\r\n\t},\r\n\tbgColor: '#fbfbfb',\r\n\tlabels: stage_name,\r\n\tdatasets: [{\r\n        data: stage_number\r\n\t}]\r\n}\r\n\r\n</script>\r\n\r\n<style>\r\n.schart{\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n</style>"
+        }
+    ]
+}

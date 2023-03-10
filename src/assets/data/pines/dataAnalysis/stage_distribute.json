@@ -1,0 +1,23 @@
+{
+    "type":[{
+        "id":"jk",
+        "title":"健康松树",
+        "number":3340
+    },{
+        "id":"hb1",
+        "title":"患病I阶段松树",
+        "number":1321
+    },{ 
+        "id":"hb2",
+        "title":"患病II阶段松树",
+        "number":351
+    },{
+        "id":"hb3",
+        "title":"患病III阶段松树",
+        "number":3340
+    },{
+        "id":"hb4",
+        "title":"患病IV阶段松树",
+        "number":2000
+    }]
+}

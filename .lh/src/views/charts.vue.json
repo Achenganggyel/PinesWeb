@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/views/charts.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1678465818155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1678465830231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n </template>\n \n <script setup lang=\"ts\" name=\"basecharts\">\n import Schart from 'vue-schart';\n-import stage_distribute from '../../public/stage_distribute.json'\n+import stage_distribute from '../assets/data/pines/dataAnalysis/stage_distribute.json'\n import type_distribute from '../assets/data/pines/dataAnalysis/type_distribute.json'\n //import StagePropInAll from '@/components/pieCard.vue'\n let stage_name:string[]=[]\n let stage_number:number[]=[]\n"
+                }
+            ],
+            "date": 1678465818155,
+            "name": "Commit-0",
+            "content": "<template>\n\t<div class=\"container\">\n\t\t<div class=\"schart-box\">\n\t\t\t<schart class=\"schart\" canvasId=\"bar\" :options=\"options1\"></schart>\n\t\t</div>\n\t\t<div class=\"schart-box\">\n\t\t\t<schart class=\"schart\" canvasId=\"line\" :options=\"options2\"></schart>\n\t\t</div>\n\t\t<div class=\"unit\">单位：万棵</div>\n\t\t<div class=\"schart-box\">\n\t\t\t<schart class=\"schart\" canvasId=\"pie\" :options=\"options3\"></schart>\n\t\t</div>\n\t\t<div class=\"schart-box\">\n\t\t\t<schart class=\"schart\" canvasId=\"ring\" :options=\"options4\"></schart>\n\t\t</div>\n\t</div>\n</template>\n\n<script setup lang=\"ts\" name=\"basecharts\">\nimport Schart from 'vue-schart';\nimport stage_distribute from '../../public/stage_distribute.json'\nimport type_distribute from '../assets/data/pines/dataAnalysis/type_distribute.json'\n//import StagePropInAll from '@/components/pieCard.vue'\nlet stage_name:string[]=[]\nlet stage_number:number[]=[]\nlet type_name:string[]=[]\nlet type_number:number[]=[]\n\nfor(let i of type_distribute.type){\n\ttype_name.push(i.title)\n\ttype_number.push(i.number)\n}\nfor(let i of stage_distribute.type){\n\tstage_name.push(i.title)\n\tstage_number.push(i.number)\n}\n\n\nconst options1 = {\n\ttype: 'bar',\n\ttitle: {\n\t\ttext: '各区域松树健康状况'\n\t},\n\txRorate: 25,\n\tlabels: ['所有', 'A区', 'B区', 'C区', 'D区'],\n\tdatasets: [\n\t\t{label: '健康',\n\t\t\tdata: [216, 55, 56, 55,50]\n\t\t},{\n\t\t\tlabel: '患病I阶段',\n\t\t\tdata: [177, 80, 32, 38,30]\n\t\t},{\n\t\t\tlabel: '患病II阶段',\n\t\t\tdata: [151, 50, 36, 36,28]\n\t\t},{\n\t\t\tlabel: '患病III阶段',\n\t\t\tdata: [117, 35, 17, 32,27]\n\t\t},{\n\t\t\tlabel: '患病IV阶段',\n\t\t\tdata: [66, 28, 5, 28,11]\n\t\t}\n\t]\n};\nconst options2 = {\n\ttype: 'line',\n\ttitle: {\n\t\ttext: '近6个月松树健康状态变化'\n\t},\n\tbgColor: '#fbfbfb',\n\tlabels: ['9月', '10月', '11月', '12月', '1月', '2月'],\n\tdatasets: [{\n\t\t\tlabel: '健康',\n\t\t\tdata: [223, 220, 219, 218, 218, 218]\n\t\t},{\n\t\t\tlabel: '患病I阶段',\n\t\t\tdata: [181, 181, 180, 178, 177, 177]\n\t\t},{\n\t\t\tlabel: '患病II阶段',\n\t\t\tdata: [152, 152, 151, 151, 151, 151]\n\t\t},{\n\t\t\tlabel: '患病III阶段',\n\t\t\tdata: [ 117, 117, 117, 117, 117, 117]\n\t\t},{\n\t\t\tlabel: '患病IV阶段',\n\t\t\tdata: [66, 66, 66, 66, 66, 66]\n\t\t}\n\t]\n};\nconst options3 = {\n\ttype: 'pie',\n\ttitle: {\n\t\ttext: '林区总树木健康状况'\n\t},\n\tlegend: {\n\t\tposition: 'left'\n\t},\n\tbgColor: '#fbfbfb',\n\tlabels: stage_name,\n\tdatasets: [{\n\t\t\tdata: stage_number\n\t}]\n};\nconst options4 = {\n\ttype: 'ring',\n\ttitle: {\n\t\ttext: '林区松树种类分布'\n\t},\n\tshowValue: false,\n\tlegend: {\n\t\tposition: 'bottom',\n\t\tbottom: 40\n\t},\n\tbgColor: '#fbfbfb',\n\tlabels: type_name,\n\tdatasets: [{\n\t\tdata: type_number\n\t}]\n};\n</script>\n\n<style>\n.schart-box {\n\tdisplay: inline-block;\n\tmargin: 20px;\n}\n.schart {\n\twidth: 600px;\n\theight: 400px;\n}\n.unit {\n\tcolor: #aeabab;\n\tpadding-left: 50px;\n\tpadding-top: 10px;\n\tpadding-bottom: 20px;\n}\n</style>\n"
+        }
+    ]
+}

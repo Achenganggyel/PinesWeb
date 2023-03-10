@@ -1,0 +1,113 @@
+.main-background{
+    background-color: aquamarine;
+}
+
+.second-background{
+    background-color: aquamarine;
+}
+
+.first-font-color{
+    color:#037155db;
+}
+
+.second-font-color{
+    color:#c4c2c2;
+}
+
+.first-icon-color{
+    background:#1ab07e;
+}
+
+.first-hover-color{
+    color:#18805e;
+}
+
+.second-icon-color{
+    background-color: #20946f;
+}
+.second-icon-color:hover{
+    background-color:#529d84;
+}
+
+.third-button-color{
+    background-color: #2cb969;
+}
+.third-button-color :hover{
+    background-color: #20894d;
+}
+.third-button-color :active{
+    background-color: #145c33;
+}
+.el-button--confirm,
+.el-button--confirm:focus{ /*靠近底部的确认键*/
+	background-color: #20946f;
+	border-color: #20946f;
+	color:#fff;
+}
+.el-button--confirm:hover{
+	background-color: #529d84;
+	border-color: #529d84;
+	color: #fff;
+}
+.el-button--confirm.is-active,
+.el-button--confirm:active{
+	background-color: #145c33;
+	border-color: #145c33;
+	color: #fff;
+}
+.el-button--small,
+.el-button--small:focus{
+	background-color: #20ba8a;
+	border-color: #20ba8a;
+	color:#fff;
+}
+.el-button--small:hover{
+	background-color: #529d84;
+	border-color: #529d84;
+	color: #fff;
+}
+.el-button--small.is-active,
+.el-button--small:active{
+	background-color: #145c33;
+	border-color: #145c33;
+	color: #fff;
+}
+.el-button--subTop,
+.el-button--subTop:focus{ /*靠近顶部的button颜色*/
+	background-color: #ad84c6;
+	border-color: #ad84c6;
+	color:#fff;
+}
+.el-button--subTop:hover{
+	background-color: #926ca8;
+	border-color: #926ca8;
+	color: #fff;
+}
+.el-button--subTop.is-active,
+.el-button--subTop:active{
+	background-color: #6b4a7e;
+	border-color: #6b4a7e;
+	color: #fff;
+}
+.third-icon-color{
+    color: #857be6; 
+}
+
+.third-hover-color{
+    color: #c3bef0;
+}
+
+.container-base{ /*底层容器修改*/
+    width:96%;
+    height: calc(74vh); /*视窗高度的74% */
+}
+
+.card-all { /*所有卡片的角度*/
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+.chart{
+    width: 100%;
+    height: 100%;
+}
